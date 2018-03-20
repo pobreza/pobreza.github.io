@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Gerador de nome de pobre">
+    <meta name="author" content="Organizações Tabajara">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Gerador de nome de pobre</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="pobreza.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="pobreza-container d-flex h-100 p-3 mx-auto flex-column">
+      <main role="main" class="inner pobreza">
+        <!-- Image -->
+        <img src="img/pobreza.jpg" class="rounded-circle my-3" alt="Pobreza" width="200" height="200">
+
+        <h1 class="pobreza-heading mb-4 display-4">Gerador de nome de pobre</h1>
+        <p class="lead">
+        Nos tempos atuais, o risco de ter um filho ou filha obtendo sucesso na
+        vida é real. Pais conscientes devem minimizar esse risco começando a
+        vida da criança com um nome de pobre. Este gerador utiliza as mais
+        avançadas técnicas de inteligência artificial para garantiar o máximo
+        de pobreza na vida da sua família no futuro.
+        </p>
+
+        <p>
+          <button id="btnSubmit" class="btn btn-primary" type="button">
+            Gerar Pobreza!
+          </button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#userOptions" aria-expanded="false" aria-controls="userOptions">
+            Opções Avançadas
+          </button>
+        </p>
+
+        <!-- Options -->
+
+        <div class="collapse" id="userOptions">
+          <form class="user-options text-left border px-3 py-3">
+            <fieldset>
+              <legend class="text-center">Opções avançadas</legend>
+
+              <input type="checkbox" name="optMax" value="on" aria-describedby="optMaxHelp">
+                Pobreza Máxima
+              </input>
+              <small id="optMaxHelp" class="form-text text-muted mb-2">
+                Ativa o nível com a maior possível garantia de pobreza.
+              </small>
+
+              <input type="checkbox" name="optKWY" value="on" aria-describedby="optKWYHelp">
+                Uso gratuito das letras K, W e Y
+              </input>
+              <small id="optKWYHelp" class="form-text text-muted mb-2">
+                Troca letra comuns e perfeitamente válidas da língua portuguesa
+                pelas letras K, W e Y (ex: "Maria" pode virar "Marya"). A troca
+                é feita de de maneira aleatória.
+              </small>
+
+              <input type="checkbox" name="optReligious" value="on" aria-describedby="optReligionsHelp">
+                Modo religioso
+              <small id="optReligiousHelp" class="form-text text-muted mb-2">
+                Já que apobreza é inevitável, por que não apelar para a sua entidade
+                religiosa preferida? Modifica os nomes para incluir temas religiosos
+                (aumentando a chance de pobreza).
+              </small>
+            </fieldset>
+          </form>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="text-center border px-3 py-3 my-3" style="display:none;"></div>
+      </main>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="pobreza.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btnSubmit").click(function(){
+          nameGen();
+        });
+      });
+    </script>
+  </body>
+</html>
